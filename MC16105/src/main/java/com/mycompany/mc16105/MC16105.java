@@ -5,14 +5,14 @@ public class MC16105 {
        char lleno='*', vacio=' ';
     int base, altura, asteriscos, espacio;
     do{
-    altura=Integer.parseInt(JOptionPane.showInputDialog("Ingrese la Altura (Entre 5 y 25) e Impar"));
+    altura=Integer.parseInt(JOptionPane.showInputDialog("Ingrese la Altura (Entre 5 y 29) e Impar"));
     if(altura%2==0){
     JOptionPane.showMessageDialog(null, "Error el numero : "+altura+" es par");
     }
-    else if(altura<5 || altura>25){
+    else if(altura<5 || altura>29){
     JOptionPane.showMessageDialog(null, "Error el numero : "+altura+" esta fuera del Rango Permitido");
     }
-    }while(altura<5||altura>25||altura%2==0);
+    }while(altura<5||altura>29||altura%2==0);
         for(base=0;base<=altura-1;base++){
            for(espacio=altura-1;espacio>=base;espacio--){
            System.out.print(vacio);
